@@ -6,6 +6,27 @@
     <title>Advanced Layout 6</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+      body{
+        position: relative;
+        display: grid;
+        gap: 1rem;
+      }
+
+      header, nav{
+        position: absolute;
+        height: 300px;
+        width: 200px;
+      }
+      header{
+        top: 50%;
+        left: 50%;
+        transform: translate(-120%, -40%);
+      }
+      nav{
+        top: 50%;
+        right: 50%;
+        transform: translate(120%, -60%);
+      }
       /* Doe hier jouw ding! */
     </style>
   </head>
