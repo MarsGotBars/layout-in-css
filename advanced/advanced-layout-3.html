@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Layout 3</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      body > * {
+        position: absolute;
+        height: 200px;
+        width: 300px;
+        left: 10%;
+      }
+      header {
+        top: 7.5%;
+      }
+      nav {
+        top: 37.5%;
+      }
+      footer {
+        top: 67.5%;
+      }
+      main {
+        width: initial;
+        height: initial;
+        position: initial;
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+      }
       /* Doe hier jouw ding! */
     </style>
   </head>
