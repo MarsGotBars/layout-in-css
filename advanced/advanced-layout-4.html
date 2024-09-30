@@ -6,6 +6,37 @@
     <title>Advanced Layout 4</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+      body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+        header, nav {
+          grid-row: 1 / 4;
+        }
+        main, footer {
+          grid-row: 3 / 6;
+        }
+      }
+      header, main{
+        grid-column: 1;
+      }
+      nav, footer{
+        grid-column: 2;
+      }
+      header{
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      }
+      nav{
+        clip-path: polygon(0 0, 100% 0, 100% 69.5%, 0 84.5%);
+      }
+      main{
+        clip-path: polygon(0 35%, 100% 20%, 100% 100%, 0% 100%);
+      }
+      footer{
+        clip-path: polygon(0 19.5%, 100% 5%, 100% 100%, 0% 100%);
+      }
+
       /* Doe hier jouw ding! */
     </style>
   </head>
