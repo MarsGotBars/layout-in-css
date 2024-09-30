@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 2</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
+      body {
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        > * {
+          min-height: 1em;
+          grid-column: 1 / -1;
+        }
+      }
+      header{
+        grid-row: span 2;
+      }
+      main {
+        grid-row: span 6;
+      }
+      footer{
+        grid-row: span 1;
+      }
       /* Doe hier jouw ding! */
     </style>
   </head>

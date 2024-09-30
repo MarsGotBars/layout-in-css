@@ -8,7 +8,19 @@
     <style>
       body {
         display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
       }
+      nav{
+        grid-column: 1;
+      }
+      main{
+        grid-column: 2 / -1;
+      }
+      header, footer {
+        grid-column: 1 / -1;
+      }
+      
       /* Doe hier jouw ding! */
     </style>
   </head>
