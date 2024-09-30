@@ -6,6 +6,29 @@
     <title>Basic Layout 9</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+      body{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
+      header{
+        grid-column: 1;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-column: 2 / -1;
+      }
+      nav > *{
+        background-color: aliceblue;
+        padding: 1rem;
+        border-radius: .5rem;
+        border: 1px solid black;
+      }
+      main, footer{
+        grid-column: 1 / -1;
+      }
       /* Doe hier jouw ding! */
     </style>
   </head>
